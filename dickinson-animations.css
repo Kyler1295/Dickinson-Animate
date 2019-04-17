@@ -1,0 +1,814 @@
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+A CSS animation library for dickinson college 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Root CSS Variables 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+:root {
+    /* Our Three Primary Colors */
+    --main-primary-red: rgb(200, 16, 46);
+    --main-primary-gold: rgb(168, 153, 104);
+    --main-primary-black: rgb(44, 42, 41);
+
+    /* Secondary Colors */
+    --main-secondary-yellow: rgb(263, 218, 36);
+    --main-secondary-green: rgb(0, 150, 94);
+    --main-secondary-blue: rgb(0, 163, 224);
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+End Root CSS Variables
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+
+
+
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Base 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+[class^="animate"] {
+    transition: all .2s ease-in-out;
+}
+
+[class^="animate-anim"] {
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+End Base 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+
+
+
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ Hovers 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+/* Scale Hovers */
+.animate-hover-scale-sm:hover {
+    transform: scale(1.1);
+}
+
+.animate-hover-scale-md:hover {
+    transform: scale(1.2);
+}
+
+.animate-hover-scale-lg:hover {
+    transform: scale(1.3);
+}
+
+/* Rotate Hovers */
+.animate-hover-rotate-45:hover {
+    transform: rotate(45deg);
+}
+
+.animate-hover-rotate-90:hover {
+    transform: rotate(90deg);
+}
+
+.animate-hover-rotate-180:hover {
+    transform: rotate(180deg);
+}
+
+/* Pulse Hovers */
+.animate-hover-pulse-sm:hover {
+    animation-name: pulse-sm;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.animate-hover-pulse-md:hover {
+    animation-name: pulse-md;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.animate-hover-pulse-lg:hover {
+    animation-name: pulse-lg;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+/* Tilt Hover */
+.animate-hover-tilt-sm:hover {
+    animation-name: tilt-sm;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+.animate-hover-tilt-md:hover {
+    animation-name: tilt-md;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+.animate-hover-tilt-lg:hover {
+    animation-name: tilt-lg;
+    animation-duration:20500ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+/* Shake Hover */
+.animate-hover-shake-sm:hover {
+    animation-name: shake-sm;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+.animate-hover-shake-md:hover {
+    animation-name: shake-md;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+.animate-hover-shake-lg:hover {
+    animation-name: shake-lg;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+End Hovers 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+
+
+
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Animations 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+/* Pulse Animations */
+.animate-anim-pulse-sm {
+    animation-name: pulse-sm;
+}
+
+.animate-anim-pulse-md {
+    animation-name: pulse-md;
+}
+
+.animate-anim-pulse-lg {
+    animation-name: pulse-lg;
+}
+
+
+/* Tilt Animations */
+.animate-anim-tilt-sm {
+    animation-name: tilt-sm;
+    animation-duration: 2s;
+    animation-direction: normal;
+}
+
+.animate-anim-tilt-md {
+    animation-name: tilt-md;
+    animation-duration: 2s;
+    animation-direction: normal;
+}
+
+.animate-anim-tilt-lg {
+    animation-name: tilt-lg;
+    animation-duration: 2s;
+    animation-direction: normal;
+}
+
+
+/* Shake Animations */
+.animate-anim-shake-sm {
+    animation-name: shake-sm;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+
+.animate-anim-shake-md {
+    animation-name: shake-md;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+
+.animate-anim-shake-lg {
+    animation-name: shake-lg;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+End Animations 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+
+
+
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Hover Animations 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+/* Border-Animate-Primary-Red */
+.animate-anihover-border-primary-red {
+    position: relative;
+    overflow: hidden;
+}
+.animate-anihover-border-primary-red::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-primary-red::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-primary-red:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid var(--main-primary-red);
+    border-left: 3px solid var(--main-primary-red);
+    transition: all .5s ease-in;
+}
+.animate-anihover-border-primary-red:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid var(--main-primary-red);
+    border-right: 3px solid var(--main-primary-red);
+    transition: all .5s ease-in;
+}
+
+/* Border-Animate-Primary-Gold */
+.animate-anihover-border-primary-gold {
+    position: relative;
+    overflow: hidden;
+}
+.animate-anihover-border-primary-gold::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-primary-gold::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-primary-gold:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid var(--main-primary-gold);
+    border-left: 3px solid var(--main-primary-gold);
+    transition: all .5s ease-in;
+}
+.animate-anihover-border-primary-gold:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid var(--main-primary-gold);
+    border-right: 3px solid var(--main-primary-gold);
+    transition: all .5s ease-in;
+}
+
+/* Border-Animate-Primary-Black */
+.animate-anihover-border-primary-black {
+    position: relative;
+    overflow: hidden;
+}
+.animate-anihover-border-primary-black::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-primary-black::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-primary-black:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid var(--main-primary-black);
+    border-left: 3px solid var(--main-primary-black);
+    transition: all .5s ease-in;
+}
+.animate-anihover-border-primary-black:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid var(--main-primary-black);
+    border-right: 3px solid var(--main-primary-black);
+    transition: all .5s ease-in;
+}
+
+/* Border-Animate-Secondary-Blue */
+.animate-anihover-border-secondary-blue {
+    position: relative;
+    overflow: hidden;
+}
+.animate-anihover-border-secondary-blue::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-secondary-blue::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-secondary-blue:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid var(--main-secondary-blue);
+    border-left: 3px solid var(--main-secondary-blue);
+    transition: all .5s ease-in;
+}
+.animate-anihover-border-secondary-blue:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid var(--main-secondary-blue);
+    border-right: 3px solid var(--main-secondary-blue);
+    transition: all .5s ease-in;
+}
+
+/* Border-Animate-Secondary-Green */
+.animate-anihover-border-secondary-green {
+    position: relative;
+    overflow: hidden;
+}
+.animate-anihover-border-secondary-green::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-secondary-green::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-secondary-green:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid var(--main-secondary-green);
+    border-left: 3px solid var(--main-secondary-green);
+    transition: all .5s ease-in;
+}
+.animate-anihover-border-secondary-green:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid var(--main-secondary-green);
+    border-right: 3px solid var(--main-secondary-green);
+    transition: all .5s ease-in;
+}
+
+/* Border-Animate-Secondary-Yellow */
+.animate-anihover-border-secondary-yellow {
+    position: relative;
+    overflow: hidden;
+}
+.animate-anihover-border-secondary-yellow::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-secondary-yellow::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.animate-anihover-border-secondary-yellow:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid var(--main-secondary-yellow);
+    border-left: 3px solid var(--main-secondary-yellow);
+    transition: all .5s ease-in;
+}
+.animate-anihover-border-secondary-yellow:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid var(--main-secondary-yellow);
+    border-right: 3px solid var(--main-secondary-yellow);
+    transition: all .5s ease-in;
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+End Hover Animations 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+
+
+
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Javascript Animations 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+/* Default for Fade in */
+.animate-fade-left {
+    opacity: 0;
+}
+
+/* Fade-in directionals */
+.animate-js-fadein-left {
+    animation-name: fade-in-left;
+    animation-duration: 1500ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.animate-js-fadein-right {
+    animation-name: fade-in-right;
+    animation-duration: 1500ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.animate-js-fadein-top {
+    animation-name: fade-in-top;
+    animation-duration: 1500ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.animate-js-fadein-bottom {
+    animation-name: fade-in-bottom;
+    animation-duration: 1500ms;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+End Javascript Animations 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+
+
+
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Keyframes 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
+
+/* Pulse Keyframes */
+@keyframes pulse-sm {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes pulse-md {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes pulse-lg {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.15);
+    }
+}
+
+/* Tilt Keyframes */
+@keyframes tilt-sm {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    } 
+    50% {
+        transform: rotate(0deg);
+    } 
+    75% {
+        transform: rotate(5deg);
+    } 
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tilt-md {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    } 
+    50% {
+        transform: rotate(0deg);
+    } 
+    75% {
+        transform: rotate(10deg);
+    } 
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes tilt-lg {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    } 
+    50% {
+        transform: rotate(0deg);
+    } 
+    75% {
+        transform: rotate(15deg);
+    } 
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Shake Keyframes */
+@keyframes shake-sm {
+    0% {
+        transform: translateX(0px);
+    }
+    15% {
+        transform: translateX(-10px);
+    }
+    20% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(10px);
+    }
+    30% {
+        transform: translateX(0px);
+    }
+    35% {
+        transform: translateX(-10px);
+    } 
+    40% {
+        transform: translateX(0px);
+    }
+    45% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes shake-md {
+    0% {
+        transform: translateX(0px);
+    }
+    15% {
+        transform: translateX(-15px);
+    }
+    20% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(15px);
+    }
+    30% {
+        transform: translateX(0px);
+    }
+    35% {
+        transform: translateX(-15px);
+    } 
+    40% {
+        transform: translateX(0px);
+    }
+    45% {
+        transform: translateX(15px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes shake-lg {
+    0% {
+        transform: translateX(0px);
+    }
+    15% {
+        transform: translateX(-20px);
+    }
+    20% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(20px);
+    }
+    30% {
+        transform: translateX(0px);
+    }
+    35% {
+        transform: translateX(-20px);
+    } 
+    40% {
+        transform: translateX(0px);
+    }
+    45% {
+        transform: translateX(20px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* Fade In Animations For Scroll Affects */
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-25px);
+    } 
+    to {
+        opactiY: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(25px);
+    } 
+    to {
+        opactiY: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-in-top {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    } 
+    to {
+        opactiY: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fade-in-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    } 
+    to {
+        opactiY: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+End Keyframes 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*/
