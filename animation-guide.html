@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dickinson-animations.css">
+    <title>Document</title>
+
+    <style>
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    li {
+        list-style-type: none;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .demo-block {
+        width: 150px;
+        height: 150px;
+        background-color: #333;
+        margin-bottom: 20px;
+        margin-right: 5px;
+    }
+    .spacer {
+        height: 150vh;
+    }
+    .spacer-mini {
+        height: 100vh;
+    }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Dickinson Animation Guide</h1>
+        <br>
+        <section class="colors">
+            <h2>Colors</h2>
+            <h3>There are a list of 6 colors.  3 primary, 3 secondary.</h3>
+            <br>
+            <ul>
+                <li><b>Primary:</b></li>
+                <li>Red: var(--main-primary-red);</li>
+                <li>Gold: var(--main-primary-gold);</li>
+                <li>Black: var(--main-primary-black);</li>
+            </ul>
+            <br>
+            <ul>
+                <li><b>Secondary:</b></li>
+                <li>Yellow: var(--main-secondary-yellow);</li>
+                <li>Green: var(--main-secondary-green);</li>
+                <li>Blue: var(--main-secondary-blue);</li>
+            </ul>
+        </section>
+        <br>
+        <section class="Hovers">
+            <h2>Hover Effects</h2>
+            <h3>Each Hover as a small, medium, and large size (sm, md, lg).</h3>
+            <br>
+            <h4>Scale</h4>
+            <p>Small Scale: add class: <i>animate-hover-scale-sm</i></p>
+            <div class="animate-hover-scale-sm demo-block"></div>
+            <br>
+            <p>Medium Scale: add class: <i>animate-hover-scale-md</i></p>
+            <div class="animate-hover-scale-md demo-block"></div>
+            <br>
+            <p>Large Scale: add class: <i>animate-hover-scale-lg</i></p>
+            <div class="animate-hover-scale-lg demo-block"></div>
+            <br><hr><br><hr><br>
+            <h4>Rotate</h4>
+            <p>45 Degree Rotate: add class: <i>animate-hover-rotate-45</i></p>
+            <div class="animate-hover-rotate-45 demo-block"></div>
+            <br>
+            <p>90 Degree Rotate: add class: <i>animate-hover-rotate-90</i></p>
+            <div class="animate-hover-rotate-90 demo-block"></div>
+            <br>
+            <p>180 Degree Rotate: add class: <i>animate-hover-rotate-180</i></p>
+            <div class="animate-hover-rotate-180 demo-block"></div>
+            <br>
+            <br><hr><br><hr><br>
+            <h4>Pulse</h4>
+            <p>Small Pulse: add class: <i>animate-hover-pulse-sm</i></p>
+            <div class="animate-hover-pulse-sm demo-block"></div>
+            <br>
+            <p>Medium Pulse: add class: <i>animate-hover-pulse-md</i></p>
+            <div class="animate-hover-pulse-md demo-block"></div>
+            <br>
+            <p>Large Pulse: add class: <i>animate-hover-pulse-lg</i></p>
+            <div class="animate-hover-pulse-lg demo-block"></div>
+            <br>
+            <br><hr><br><hr><br>
+            <h4>Tilt</h4>
+            <p>Small Tilt: add class: <i>animate-hover-tilt-sm</i></p>
+            <div class="animate-hover-tilt-sm demo-block"></div>
+            <br>
+            <p>Medium Tilt: add class: <i>animate-hover-tilt-md</i></p>
+            <div class="animate-hover-tilt-md demo-block"></div>
+            <br>
+            <p>Large Tilt: add class: <i>animate-hover-tilt-lg</i></p>
+            <div class="animate-hover-tilt-lg demo-block"></div>
+            <br>
+            <br><hr><br><hr><br>
+            <h4>Shake</h4>
+            <p>Small Shake: add class: <i>animate-hover-shake-sm</i></p>
+            <div class="animate-hover-shake-sm demo-block"></div>
+            <br>
+            <p>Medium Shake: add class: <i>animate-hover-shake-md</i></p>
+            <div class="animate-hover-shake-md demo-block"></div>
+            <br>
+            <p>Large Shake: add class: <i>animate-hover-shake-lg</i></p>
+            <div class="animate-hover-shake-lg demo-block"></div>
+            <br>
+        </section>
+        <section class="animations">
+            <h2>Animations</h2>
+            <h3>Animations are just a constant animation.  They also have small medium and large sub classes.</h3>
+            <h4>Pulse</h4>
+            <p>Small Pulse: add class: <i>animate-anim-pulse-sm</i></p>
+            <br>
+            <div class="animate-anim-pulse-sm demo-block"></div>
+            <br>
+            <p>Medium Pulse: add class: <i>animate-anim-pulse-md</i></p>
+            <br>
+            <div class="animate-anim-pulse-md demo-block"></div>
+            <br>
+            <p>Large Pulse: add class: <i>animate-anim-pulse-lg</i></p>
+            <br>
+            <div class="animate-anim-pulse-lg demo-block"></div>
+            <br>
+            <br><hr><br><hr><br>
+            <h4>Tilt</h4>
+            <p>Small Tilt: add class: <i>animate-anim-tilt-sm</i></p>
+            <br>
+            <div class="animate-anim-tilt-sm demo-block"></div>
+            <br>
+            <p>Medium Tilt: add class: <i>animate-anim-tilt-md</i></p>
+            <br>
+            <div class="animate-anim-tilt-md demo-block"></div>
+            <br>
+            <p>Large Tilt: add class: <i>animate-anim-tilt-lg</i></p>
+            <br>
+            <div class="animate-anim-tilt-lg demo-block"></div>
+            <br>
+            <br><hr><br><hr><br>
+            <h4>Shake</h4>
+            <p>Small Shake: add class: <i>animate-anim-shake-sm</i></p>
+            <br>
+            <div class="animate-anim-shake-sm demo-block"></div>
+            <br>
+            <p>Medium Shake: add class: <i>animate-anim-shake-md</i></p>
+            <br>
+            <div class="animate-anim-shake-md demo-block"></div>
+            <br>
+            <p>Large Shake: add class: <i>animate-anim-shake-lg</i></p>
+            <br>
+            <div class="animate-anim-shake-lg demo-block"></div>
+            <br>
+            <br><hr><br><hr><br>
+        </section>
+        <section class="animation-hover">
+            <h2>Hover Animations (Border)</h2>
+            <h3>These are hover animations, specifically borders.</h3>
+            <br>
+            <h4>Primary Colors:</h4>
+            <p>Red Border: add class: <i>animate-anihover-border-primary-red</i></p>
+            <br>
+            <div class="animate-anihover-border-primary-red demo-block"></div>
+            <br>
+            <p>Gold Border: add class: <i>animate-anihover-border-primary-gold</i></p>
+            <br>
+            <div class="animate-anihover-border-primary-gold demo-block"></div>
+            <br>
+            <p>Black Border: add class: <i>animate-anihover-border-primary-black</i></p>
+            <br>
+            <div class="animate-anihover-border-primary-black demo-block" style="background-color: #c8102e;"></div>
+            <br>
+            <h4>Secondary Colors:</h4>
+            <p>Yellow Border: add class: <i>animate-anihover-border-secondary-yellow</i></p>
+            <br>
+            <div class="animate-anihover-border-secondary-yellow demo-block"></div>
+            <br>
+            <p>Green Border: add class: <i>animate-anihover-border-secondary-green</i></p>
+            <br>
+            <div class="animate-anihover-border-secondary-green demo-block"></div>
+            <br>
+            <p>Blue Border: add class: <i>animate-anihover-border-secondary-blue</i></p>
+            <br>
+            <div class="animate-anihover-border-secondary-blue demo-block"></div>
+            <br>
+        </section>
+        <section class="fade-ins">
+            <h2>Fade Ins</h2>
+            <h3>Fade ins will add an animation when the object scrolls into screen. There are 4 types.</h3>
+            <br>
+            <ul>
+                <li>Fade Left</li>
+                <li>Fade Right</li>
+                <li>Fade Top</li>
+                <li>Fade Right</li>
+            </ul>
+            <br>
+            <p>To add them add the following class to each perspectively.</p>
+            <ul>
+                <li>animate-js-fadein-left</li>
+                <li>animate-js-fadein-right</li>
+                <li>animate-js-fadein-top</li>
+                <li>animate-js-fadein-bottom</li>
+            </ul>
+            <br>
+            <h3>Scroll Below The Blank Space Below To See A Demo</h3>
+            <div class="spacer"></div>
+        </section>
+        <h3>Fade Left</h3>
+        <Section class="fade-demo-left" style="display: flex; justify-content: flex-start; width: 100%; flex-wrap: wrap;">
+            <div class="animate-js-fadein-left demo-block"></div>
+            <div class="animate-js-fadein-left demo-block"></div>
+            <div class="animate-js-fadein-left demo-block"></div>
+            <div class="animate-js-fadein-left demo-block"></div>
+            <div class="animate-js-fadein-left demo-block"></div>
+            <div class="animate-js-fadein-left demo-block"></div>
+            <div class="animate-js-fadein-left demo-block"></div>
+            <div class="animate-js-fadein-left demo-block"></div>
+            <div class="animate-js-fadein-left demo-block"></div>
+            <div class="animate-js-fadein-left demo-block"></div>
+            <div class="animate-js-fadein-left demo-block"></div>
+            <div class="animate-js-fadein-left demo-block"></div>
+        </Section>
+        <div class="spacer-mini"></div>
+        <h3>Fade Right</h3>
+        <section class="fade-demo-right" style="display: flex; justify-content: flex-start; width: 100%; flex-wrap: wrap;">
+            <div class="animate-js-fadein-right demo-block"></div>
+            <div class="animate-js-fadein-right demo-block"></div>
+            <div class="animate-js-fadein-right demo-block"></div>
+            <div class="animate-js-fadein-right demo-block"></div>
+            <div class="animate-js-fadein-right demo-block"></div>
+            <div class="animate-js-fadein-right demo-block"></div>
+            <div class="animate-js-fadein-right demo-block"></div>
+            <div class="animate-js-fadein-right demo-block"></div>
+            <div class="animate-js-fadein-right demo-block"></div>
+            <div class="animate-js-fadein-right demo-block"></div>
+            <div class="animate-js-fadein-right demo-block"></div>
+            <div class="animate-js-fadein-right demo-block"></div>
+        </section>
+        <div class="spacer-mini"></div>
+        <h3>Fade Top</h3>
+        <section class="fade-demo-top" style="display: flex; justify-content: flex-start; width: 100%; flex-wrap: wrap;">
+            <div class="animate-js-fadein-top demo-block"></div>
+            <div class="animate-js-fadein-top demo-block"></div>
+            <div class="animate-js-fadein-top demo-block"></div>
+            <div class="animate-js-fadein-top demo-block"></div>
+            <div class="animate-js-fadein-top demo-block"></div>
+            <div class="animate-js-fadein-top demo-block"></div>
+            <div class="animate-js-fadein-top demo-block"></div>
+            <div class="animate-js-fadein-top demo-block"></div>
+            <div class="animate-js-fadein-top demo-block"></div>
+            <div class="animate-js-fadein-top demo-block"></div>
+            <div class="animate-js-fadein-top demo-block"></div>
+            <div class="animate-js-fadein-top demo-block"></div>
+        </section>
+        <div class="spacer-mini"></div>
+        <h3>Fade Bottom</h3>
+        <section class="fade-demo-bottom" style="display: flex; justify-content: flex-start; width: 100%; flex-wrap: wrap;">
+            <div class="animate-js-fadein-bottom demo-block"></div>
+            <div class="animate-js-fadein-bottom demo-block"></div>
+            <div class="animate-js-fadein-bottom demo-block"></div>
+            <div class="animate-js-fadein-bottom demo-block"></div>
+            <div class="animate-js-fadein-bottom demo-block"></div>
+            <div class="animate-js-fadein-bottom demo-block"></div>
+            <div class="animate-js-fadein-bottom demo-block"></div>
+            <div class="animate-js-fadein-bottom demo-block"></div>
+            <div class="animate-js-fadein-bottom demo-block"></div>
+            <div class="animate-js-fadein-bottom demo-block"></div>
+            <div class="animate-js-fadein-bottom demo-block"></div>
+            <div class="animate-js-fadein-bottom demo-block"></div>
+        </section>
+        <div class="spacer-mini"></div>
+    </div>
+
+    <script src="animation.js"></script>
+</body>
+</html>
