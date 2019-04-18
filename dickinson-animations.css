@@ -525,6 +525,18 @@ Javascript Animations
     opacity: 0;
 }
 
+.animate-fade-right {
+    opacity: 0;
+}
+
+.animate-fade-top {
+    opacity: 0;
+}
+
+.animate-fade-bottom {
+    opacity: 0;
+}
+
 /* Fade-in directionals */
 .animate-js-fadein-left {
     animation-name: fade-in-left;
